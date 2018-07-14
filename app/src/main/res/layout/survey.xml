@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imagebtn"
+        android:text="Hello World!"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:textSize="15dp"
+    android:id="@+id/title"
+    android:textColor="#363636"
+    android:hint="제목"/>
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:textSize="15dp"
+    android:id="@+id/explain"
+    android:hint="설명"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="URL"
+    android:id="@+id/url"/>
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#fff"
+    android:id="@+id/upload"
+    android:text="업로드"/>
+
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="14px"
+    android:background="#EDEDED"/>
+
+    <ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listView">
+
+
+    </ListView>
+</LinearLayout>
